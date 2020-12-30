@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html ng-app="kalkulator" lang="pl">
+<head>
+    <meta charset="utf-8"/>
+    <title>Simple Calc using Angular</title>
+    <script src="angular.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+        <form class="calc" ng-controller="Main">
+                    <p class="current-result">{{tmpres}}</p>   
+                  <p><input disabled type="text" name="result" id="res" value="{{result}}" class="calc-display-input"></p>
+                <table>
+                  <tr>
+                      <td><button class="dzialania" ng-click="Potega2()" type="button"  >x<sup>2</sup></button></td>
+                      <td><button class="dzialania" ng-click="Operacja('^')" type="button"  >x<sup>y</sup></button></td>
+                      <td><button class="dzialania" ng-click="sinus()" type="button"  >sin</button></td>
+                      <td><button class="dzialania" ng-click="cosinus()" type="button"  >cos</button></td>
+                      <td><button class="dzialania" ng-click="tangens()" type="button"  >tan</button></td>
+                  </tr>
+                  <tr>
+                      <td><button class="dzialania" ng-click="sqrt()" type="button"  >&radic;</button></td>
+                      <td><button class="dzialania" ng-click="doPotegi()" type="button"  >10<sup>x</sup></button></td>
+                      <td><button class="dzialania" ng-click="logarytm()" type="button"  >log</button></td>
+                      <td><button class="dzialania" ng-click="expButton()" type="button"  >Exp</button></td>
+                      <td><button class="dzialania" ng-click="Operacja('%')" type="button"  >Mod</button></td>
+                  </tr>
+                  <tr>
+                      <td><button class="dzialania" ng-click="" type="button"  >↑</button></td>
+                      <td><button class="dzialania" ng-click="calcClear()" type="button"  >CE</button></td>
+                      <td><button class="dzialania" ng-click="calcClear()" type="button"  >C</button></td>
+                      <td><button class="dzialania" ng-click="backspace()" type="button"  >⌫</button></td>
+                      <td><button class="dzialania" ng-click='operate("/")' type="button"  >÷</button></td>
+                  </tr>
+                  <tr>
+                      <td><button class="dzialania" ng-click="piNumber()" type="button"  >π</button></td>
+                      <td><button type="button" ng-click="updateOutput('7')" >7</button></td>
+                      <td><button type="button" ng-click="updateOutput('8')" >8</button></td>
+                      <td><button type="button" ng-click="updateOutput('9')" >9</button></td>
+                      <td><button class="dzialania" ng-click='Operacja("*")' type="button"  >x</button></td>
+                  </tr>
+                  <tr>
+                      <td><button class="dzialania" ng-click="factorial()" type="button"  >n!</button></td>
+                      <td><button type="button" ng-click="updateOutput('4')" >4</button></td>
+                      <td><button type="button" ng-click="updateOutput('5')" >5</button></td>
+                      <td><button type="button" ng-click="updateOutput('6')" >6</button></td>
+                      <td><button class="dzialania" ng-click='Operacja("-")' type="button"  >-</button></td>
+                  </tr>
+                  <tr>
+                      <td><button class="dzialania" ng-click="plusMinus()" type="button"  >+/-</button></td>
+                      <td><button type="button" ng-click="updateOutput('1')" >1</button></td>
+                      <td><button type="button" ng-click="updateOutput('2')" >2</button></td>
+                      <td><button type="button" ng-click="updateOutput('3')" >3</button></td>
+                      <td><button class="dzialania" ng-click='Operacja("+")' type="button"  >+</button></td>
+                  </tr>
+                  <tr>
+                      <td><button class="dzialania" ng-click="updateOutput('(')" type="button"  >(</button></td>
+                      <td><button class="dzialania" ng-click="updateOutput(')')" type="button"  >)</button></td>
+                      <td><button type="button" ng-click="updateOutput('0')" >0</button></td>
+                      <td><button class="dzialania" ng-click="updateOutput('.')" type="button"  >.</button></td>
+                      <td><button class="dzialania" ng-click="equal()" type="button"  >=</button></td>
+                  </tr>
+                </table>
+        </form>
+</body>
+<script src="script.js"></script>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--<p>Numpow1: {{numpow1}}</p>
+                  <p>Numpow2: {{numpow2}}</p>-->

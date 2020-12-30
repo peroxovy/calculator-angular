@@ -1,0 +1,64 @@
+td{
+    padding-bottom: 3px;
+    padding-left: 0px;
+    padding-right: 0px;
+    height: 100%;
+}
+
+tr{
+    text-align: center;  
+    border-style: none;
+    background-color: gainsboro;
+}
+
+table{
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+button{
+    text-align: center;
+    border: 2px solid deepskyblue;
+    width:88px;
+    height:55px;
+    color:black;
+    background-color: skyblue;
+	border-radius:5px;  
+}
+
+.dzialania{
+    text-align: center;
+    border: 2px solid dodgerblue;
+
+    color:black;
+    background-color: deepskyblue;
+	border-radius:10px; 
+}
+
+
+
+input{
+    background-color: gainsboro;
+    color: black;
+    text-align: right;
+    border-style: none;
+    font-size:45px;
+    width: 95%;
+    
+}
+
+.calc{
+    background-color: gainsboro;
+    width: 35%;
+    align-items: center;
+    font-family: Calibri;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.current-result{
+    color: black; 
+    width: 95%;
+    text-align: right;
+}
